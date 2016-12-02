@@ -1,0 +1,98 @@
+.social-section {
+
+    &__title {
+        display: none;
+        font: 2.3125em "SegoeUIRegular", sans-serif;
+        line-height: 1;
+        color: $white;
+        text-transform: uppercase;
+    }
+
+    &__content {
+    }
+
+    &__left {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 10px;
+    }
+
+    &__number {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font: 1.5625em "SegoeUILight", sans-serif;
+        line-height: 1;
+        color: $white;
+    }
+
+    &__right {
+        background: $corn;
+        text-align: center;
+        padding: 45px 0;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            background: url("../img/plus-icon.png") no-repeat 0 0;
+            width: 11px;
+            height: 11px;
+        }
+    }
+
+    &__text {
+        flex: 1;
+        background: $california;
+        font: 1.75em "SegoeUILight", sans-serif;
+        line-height: 1.17em;
+        color: $white;
+        padding: 20px;
+        margin-right: 10px;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            background: url("../img/plus-icon.png") no-repeat 0 0;
+            width: 11px;
+            height: 11px;
+        }
+    }
+}
+
+@media all and (min-width: $screen-lg-min) {
+    .social-section {
+        background: url("../img/section-bg.jpg") repeat 0 0;
+        padding-top: 30px;
+        padding-bottom: 170px;
+
+        &__title {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        &__left {
+            margin: 0;
+            flex: 2;
+        }
+
+        &__right {
+            flex: 1;
+            margin-left: 40px;
+        }
+
+        &__text {
+            margin: 0;
+        }
+
+        &__content {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+    }
+}

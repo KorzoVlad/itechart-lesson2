@@ -1,0 +1,12 @@
+.adv-section__content {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.adv-section__title {
+  font: 2.4375em "SegoeUIRegular", sans-serif;
+  color: $corn;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+}
